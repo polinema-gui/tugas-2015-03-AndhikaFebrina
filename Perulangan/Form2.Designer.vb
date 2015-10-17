@@ -27,7 +27,7 @@ Partial Class Form2
         Me.barisString = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.hasilText = New System.Windows.Forms.TextBox()
-        Me.Pola = New System.Windows.Forms.ComboBox()
+        Me.Cmb_pola = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -72,22 +72,24 @@ Partial Class Form2
         Me.hasilText.Name = "hasilText"
         Me.hasilText.Size = New System.Drawing.Size(445, 336)
         Me.hasilText.TabIndex = 5
+        Me.hasilText.Text = "hasil"
         '
-        'Pola
+        'Cmb_pola
         '
-        Me.Pola.FormattingEnabled = True
-        Me.Pola.Items.AddRange(New Object() {"Piramyd", "Hollow Piramyd", "Inverted Piramyd", "Hollow Inverted Piramyd"})
-        Me.Pola.Location = New System.Drawing.Point(66, 12)
-        Me.Pola.Name = "Pola"
-        Me.Pola.Size = New System.Drawing.Size(391, 21)
-        Me.Pola.TabIndex = 6
+        Me.Cmb_pola.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cmb_pola.FormattingEnabled = True
+        Me.Cmb_pola.Items.AddRange(New Object() {"Pyramid", "Hollow Pyramid", "Inverted Pyramid", "Hollow Inverted Pyramid"})
+        Me.Cmb_pola.Location = New System.Drawing.Point(66, 11)
+        Me.Cmb_pola.Name = "Cmb_pola"
+        Me.Cmb_pola.Size = New System.Drawing.Size(386, 21)
+        Me.Cmb_pola.TabIndex = 6
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(465, 425)
-        Me.Controls.Add(Me.Pola)
+        Me.Controls.Add(Me.Cmb_pola)
         Me.Controls.Add(Me.hasilText)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.barisString)
@@ -107,5 +109,5 @@ Partial Class Form2
     Friend WithEvents barisString As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents hasilText As System.Windows.Forms.TextBox
-    Friend WithEvents Pola As System.Windows.Forms.ComboBox
+    Friend WithEvents Cmb_pola As System.Windows.Forms.ComboBox
 End Class
