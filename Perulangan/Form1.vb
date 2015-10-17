@@ -1,3 +1,21 @@
 ﻿Public Class Form1
 
+    Private Sub ProblemBintangToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles ProblemBintangToolStripMenuItem.Click
+        Form2.Show()
+    End Sub
+
+
+    Private Sub MatriksKalkulatorToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles MatriksKalkulatorToolStripMenuItem.Click
+        Form3.Show()
+    End Sub
+
+
+    Private Sub KeluarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles KeluarToolStripMenuItem.Click
+        Dim pilih = MessageBox.Show("Apakah anda yakin ingin keluar ?", "Konfirmasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        If pilih = Windows.Forms.DialogResult.OK Then
+            Environment.Exit(0)
+        Else
+
+        End If
+    End Sub
 End Class
